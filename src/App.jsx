@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Marci from './components/AboutMarci.jsx';
+import Services from './components/Services.jsx';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Marci />
+      <Services />
     </>
   );
 }
