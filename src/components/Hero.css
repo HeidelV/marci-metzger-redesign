@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Darken the image so the text is readable */
@@ -94,10 +95,12 @@
 
 /* ===== Tablet and Mobile ===== */
 @media (max-width: 768px) {
-  .hero {
-    min-height: 75vh;
-    background-position: center;
-  }
+   .hero {
+        min-height: 75vh;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
 
   .hero-content {
     padding-top: 80px;

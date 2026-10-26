@@ -1,12 +1,42 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Keep navbar visible near the top
+      if (currentScrollY < 100) {
+        setIsHidden(false);
+      } else if (!menuOpen) {
+        // Hide when scrolling down
+        if (currentScrollY > lastScrollY.current) {
+          setIsHidden(true);
+        }
+        // Show when scrolling up
+        else if (currentScrollY < lastScrollY.current) {
+          setIsHidden(false);
+        }
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [menuOpen]);
 
   return (
     <>
-      <nav className="custom-navbar">
+      <nav className={`custom-navbar ${isHidden ? 'navbar-hidden' : ''}`}>
         <div className="container-fluid navbar-container">
 
           {/* Left navigation */}

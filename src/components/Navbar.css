@@ -1,15 +1,20 @@
 
 /* ===== Main Navbar ===== */
 .custom-navbar {
-  position: relative;
-  z-index: 1000;
-  width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  background: transparent;
-  box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #ffffff;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
 }
 
+.custom-navbar.navbar-hidden {
+  transform: translateY(-100%);
+}
 
 .navbar-container {
   position: relative;
