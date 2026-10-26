@@ -34,7 +34,10 @@ function Services() {
     <section className="services-section" id="services">
       <div className="container">
         <div className="services-heading">
-          <span className="services-eyebrow">HOW WE HELP</span>
+            <div className="services-eyebrow">
+                <span className="services-line"></span>
+                <span>HOW WE HELP</span>
+            </div>
           <h2>GET IT SOLD.</h2>
         </div>
 

@@ -16,7 +16,10 @@ function About() {
 
           {/* About Marci Text */}
           <div className="about-text">
-            <p className="about-eyebrow">ABOUT MARCI</p>
+            <div className="about-eyebrow">
+                <span className="about-line"></span>
+                <span>ABOUT MARCI</span>
+            </div>
 
             <h2>Marci Metzger</h2>
 

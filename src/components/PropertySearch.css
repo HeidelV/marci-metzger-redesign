@@ -1,0 +1,344 @@
+
+.property-search-section {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('https://img1.wsimg.com/isteam/getty/2223376026/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:3070,m');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+.property-search-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.property-search-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 15, 15, 0.58),
+    rgba(15, 15, 15, 0.12)
+  );
+}
+
+.property-search-heading {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.property-search-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+  color: #d2a184;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.property-search-line {
+  display: inline-block;
+  width: 62px;
+  height: 3px;
+  flex-shrink: 0;
+  background-color: #b18b7a;
+}
+
+.property-search-heading h2 {
+  margin: 0 0 20px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.property-search-heading h2 em {
+  color: #c99a7b;
+  font-weight: 400;
+}
+
+.property-search-heading p {
+  max-width: 480px;
+  margin: 0;
+  color: #eeeeee;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.property-search-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 30px;
+  align-items: end;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(177, 139, 122, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  color: #252525;
+}
+
+.property-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 9px;
+}
+
+.property-field label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.property-field select {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.property-field select:focus {
+  border-color: #b18b7a;
+  box-shadow: 0 0 0 2px rgba(177, 139, 122, 0.15);
+}
+
+.property-price-field input {
+  width: 100%;
+  height: 46px;
+  padding: 0 2px;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  border-radius: 0;
+  background: transparent;
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.property-price-field input:focus {
+  border-bottom: 2px solid #b18b7a;
+}
+
+.property-price-field input::placeholder {
+  color: #888888;
+}
+
+
+.property-search-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 30px;
+  align-items: end;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(177, 139, 122, 0.6);
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+  color: #252525;
+}
+
+.property-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 9px;
+}
+
+.property-field label {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.property-field select {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.property-field select:focus {
+  border-color: #b18b7a;
+  box-shadow: 0 0 0 2px rgba(177, 139, 122, 0.15);
+}
+
+/* Pair two fields within a single grid column */
+.property-search-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  min-width: 0;
+}
+
+.property-price-field input {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  padding: 0 2px;
+  border: none;
+  border-bottom: 1px solid #c9c9c9;
+  border-radius: 0;
+  background: transparent;
+  color: #333333;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.property-price-field input:focus {
+  border-bottom: 2px solid #b18b7a;
+}
+
+.property-price-field input::placeholder {
+  color: #888888;
+}
+
+.property-search-button {
+  grid-column: auto;
+  justify-self: stretch;
+  width: 100%;
+  max-width: none;
+  height: 46px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #9e7053;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+}
+
+.property-search-button span {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.property-search-button:hover {
+  background-color: #80583f;
+}
+
+
+/* Tablet */
+@media (max-width: 991px) {
+  .property-search-section {
+    padding: 80px 0;
+  }
+
+  .property-search-heading h2 {
+    font-size: 44px;
+  }
+
+  .property-search-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 25px;
+  }
+
+  .property-search-pair {
+    gap: 10px;
+  }
+
+  .property-search-button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .property-search-section {
+    padding: 65px 0;
+    background-attachment: scroll;
+  }
+
+  .property-search-heading {
+    margin-bottom: 35px;
+  }
+
+  .property-search-heading h2 {
+    font-size: 36px;
+  }
+
+  .property-search-heading p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .property-search-form {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 22px;
+  }
+
+  .property-search-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .property-search-button {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .property-search-section {
+    padding: 50px 0;
+  }
+
+  .property-search-heading h2 {
+    font-size: 30px;
+  }
+
+  .property-search-eyebrow {
+    gap: 12px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .property-search-line {
+    width: 40px;
+  }
+
+  .property-search-form {
+    padding: 18px;
+    gap: 20px;
+  }
+
+  .property-search-pair {
+    gap: 10px;
+  }
+
+  .property-field label {
+    font-size: 13px;
+  }
+
+  .property-field select,
+  .property-price-field input {
+    font-size: 13px;
+  }
+}

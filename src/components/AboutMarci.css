@@ -34,11 +34,22 @@
 }
 
 .about-eyebrow {
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 14px;
   color: #b18b7a;
-  font-family: 'Paperlogy Bold', sans-serif;
-  font-size: 0.75rem;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: 3px;
+}
+
+.about-line {
+  display: inline-block;
+  width: 62px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: #b18b7a;
 }
 
 .about-text h2 {
@@ -90,6 +101,7 @@
   background-color: #b18b7a;
 }
 
+
 /* ===== Tablet and Mobile Responsiveness ===== */
 @media (max-width: 768px) {
   .about-section {
@@ -114,6 +126,14 @@
     font-size: clamp(2.2rem, 7vw, 3rem);
   }
 
+  .about-eyebrow {
+    justify-content: center;
+  }
+
+  .about-line {
+    width: 45px;
+  }
+
   .about-divider {
     margin: 0 auto 24px;
   }
@@ -134,8 +154,13 @@
   }
 
   .about-eyebrow {
+    gap: 12px;
     font-size: 0.7rem;
     letter-spacing: 2px;
+  }
+
+  .about-line {
+    width: 35px;
   }
 
   .about-tagline {

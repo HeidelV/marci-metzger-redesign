@@ -10,12 +10,22 @@
 }
 
 .services-eyebrow {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 14px;
   color: #b18b7a;
   font-size: 12px;
-  letter-spacing: 3px;
   font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.services-line {
+  display: inline-block;
+  width: 62px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: #b18b7a;
 }
 
 .services-heading h2 {

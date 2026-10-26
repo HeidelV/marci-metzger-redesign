@@ -2,6 +2,7 @@ import Navbar from './components/Navbar.jsx';
 import Hero from './components/Hero.jsx';
 import Marci from './components/AboutMarci.jsx';
 import Services from './components/Services.jsx';
+import PropertySearch from './components/PropertySearch.jsx';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Marci />
       <Services />
+      <PropertySearch />
     </>
   );
 }
