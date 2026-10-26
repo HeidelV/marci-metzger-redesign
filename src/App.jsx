@@ -4,6 +4,7 @@ import Marci from './components/AboutMarci.jsx';
 import Services from './components/Services.jsx';
 import PropertySearch from './components/PropertySearch.jsx';
 import Affiliations from './components/Affiliations.jsx';
+import Gallery from './components/Gallery.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Services />
       <PropertySearch />
       <Affiliations />
+      <Gallery />
     </>
   );
 }
