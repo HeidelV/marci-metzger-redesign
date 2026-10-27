@@ -6,6 +6,7 @@ import PropertySearch from './components/PropertySearch.jsx';
 import Affiliations from './components/Affiliations.jsx';
 import Gallery from './components/Gallery.jsx';
 import OurServices from './components/OurServices.jsx';
+import Contact from './components/Contact.jsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Affiliations />
       <Gallery />
       <OurServices />
+      <Contact />
     </>
   );
 }
